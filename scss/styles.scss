@@ -341,7 +341,7 @@ footer {
         position: absolute;
         content: '';
         top: 100%;
-        height: 1px;
+        height: 3px;
         width: 50px;
         left: 0;
         right: 0;
@@ -796,6 +796,10 @@ footer {
 		font-size: 1em;
 	}
 }
+i.fa.fa-external-link {
+    font-size: 13px;
+    margin-right: 3px;
+}
 .project__photo{
   width: 100%;
   height: auto;
@@ -832,8 +836,9 @@ footer {
 		}
 }
 
-.viewProject{
-
+.viewProject a:hover{
+	text-decoration: none;
+	color: darken($base-color-aqua, 30% );
 }
 
 
@@ -897,7 +902,7 @@ footer {
 
     h2 {
         color: $heading;
-        margin-bottom: 50px;
+        margin-bottom: 60px;
     }
 
     ul {
