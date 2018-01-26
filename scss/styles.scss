@@ -248,11 +248,11 @@ header {
 }
 
 footer {
-    padding: 50px 0;
+    // padding: 50px 0;
 }
 
 .copyright {
-    padding-top: 20px;
+    padding-top: 13px;
 
     p {
         margin: 0;
@@ -262,13 +262,16 @@ footer {
 
 .top {
     text-align: center;
+		padding: 4px 0;
+
 
     span {
         cursor: pointer;
         display: block;
-        margin: 15px auto 0 auto;
-        width: 35px;
-        height: 35px;
+        // margin: 15px auto 0 auto;
+				margin: 2px auto;
+        width: 31px;
+        height: 31px;
         border-radius: 50%;
         border: 3px solid lighten($text, 25%);
         text-align:center;
@@ -331,7 +334,7 @@ footer {
     position: relative;
     display: inline-block;
     font-size: 2em;
-    font-weight: 300;
+    font-weight: 400;
     margin: 0 0 30px 0;
 
     &:after {
@@ -788,6 +791,7 @@ footer {
 .column__right p{
 	font-size: 1.1em;
 	margin-left: 20px;
+	color: $text;
 	@media all and (max-width: 768px){
 		font-size: 1em;
 	}
@@ -942,10 +946,26 @@ footer {
     text-align: center;
 
     h2 {
-        margin: 0 0 15px 0;
+        margin: 0 0 30px 0;
         color: #fff;
         font-weight: 500;
     }
+
+		h3{
+			color: #fff;
+			font-size: 1.4em;
+		}
+
+		p{
+			color: #fff;
+			font-size: 1.2em;
+		}
+
+		i{
+		font-size: 32px;
+    margin: 0 10px;
+    color: $base-color-aqua;
+		}
 }
 
 #contact-form {
@@ -1250,7 +1270,7 @@ footer {
 
         p {
             text-align: justify;
-            font-size: 1.40em;
+            font-size: 1.1em;
             width: 90%;
             margin: 0 auto;
         }
@@ -1261,5 +1281,12 @@ footer {
             margin-bottom: 20px;
         }
     }
+
+	#skills{
+
+			li{
+		    font-size: 1.05em;
+			}
+		}
 
 }
