@@ -195,8 +195,7 @@ footer {
 
   a {
     display: block;
-    color: $base-color-yellow;
-    padding: 10px;
+      padding: 10px;
 		&:hover {
     	color: $base-color;
   	}
@@ -347,7 +346,6 @@ footer {
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    border: 3px solid $base-color-yellow;
     text-align:center;
   }
 
@@ -827,7 +825,6 @@ i.fa.fa-external-link {
   button {
     display: block;
     width: 100%;
-    background:$base-color-yellow;
     border-radius: 4px;
     padding: 5px 10px;
     border: none;
