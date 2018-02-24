@@ -1,51 +1,37 @@
 
 /* ----- Variables ----- */
-
-
 $base-color-white: #fff;
 $base-color-black: #000000;
 $base-color-aqua: #0bb;
 $base-color-light: #d1d1d1;
 $base-color-light-grey: #f9f9f9;
-
 $background: #fff;
 $background-alt: #191919;
 $border: #dcd9d9;
 $heading: #374054;
 $text: #74808a;
 
-
 /*    ----- Mixins -----  */
-
-
 @mixin transition($duration: 0.5s, $func: ease, $property: all) {
   transition: #{$duration} #{$func} #{$property};
 }
-
 @mixin placeholder {
   &::-webkit-input-placeholder {
     @content;
   }
-
   &:-moz-placeholder {
     @content;
     opacity: 1;
   }
-
   &::-moz-placeholder {
     @content;
     opacity: 1;
   }
-
   &:-ms-input-placeholder {
     @content;
   }
 }
-
-
 /*  -----  Global Styles ----- */
-
-
 body {
   font-size: 16px;
 	font-family: 'Roboto Mono', monospace;
@@ -54,8 +40,6 @@ body {
     z-index: -1;
   }
 }
-
-
 header {
   position: absolute;
   top: 0;
@@ -67,7 +51,6 @@ header {
   animation-iteration-count: 1;
   animation-timing-function: ease;
   animation-duration: 0.75s;
-
   ul {
     display: inline-block;
     background: $base-color-white;
@@ -78,11 +61,9 @@ header {
     border-bottom-left-radius: 4px;
     width:100%;
   }
-
   li {
     display: inline-block;
   }
-
   a {
     display: block;
     color: $base-color-black;
@@ -99,7 +80,6 @@ header {
       text-decoration: none;
     }
   }
-
   &.active {
     display: block;
   }
@@ -108,13 +88,11 @@ header {
     z-index: 999;
   }
 }
-
 #menu {
   &.active {
     display: block;
   }
 }
-
 #mobile-menu-open {
   display: none;
   cursor: pointer;
@@ -127,7 +105,6 @@ header {
   padding: 0 7px;
   border-radius: 4px;
 }
-
 #mobile-menu-close {
   display: none;
   text-align: right;
@@ -142,16 +119,13 @@ header {
     font-size: 0.5em;
     text-transform: uppercase;
   }
-
   i {
     vertical-align: middle;
 	}
 }
-
 footer {
   // padding: 50px 0;
 }
-
 .copyright {
   padding-top: 13px;
   p {
@@ -159,7 +133,6 @@ footer {
     color: $text;
   }
 }
-
 .top {
   text-align: center;
 	padding: 4px 0;
@@ -174,34 +147,29 @@ footer {
     border: 3px solid lighten($text, 25%);
     text-align:center;
   }
-
   i {
     color: $text;
   }
 }
-
 .social {
   text-align: right;
   ul {
     margin: 5px 0 0 0;
     padding: 0;
   }
-
   li {
     display: inline-block;
     font-size: 1.25em;
     list-style: none;
   }
-
   a {
     display: block;
       padding: 10px;
 		&:hover {
-    	color: $base-color;
+    	// color: $base-color;
   	}
   }
 }
-
 .btn-rounded-white {
   display: inline-block;
   color: #fff;
@@ -210,20 +178,17 @@ footer {
   border-radius: 30px;
   @include transition();
   &:hover {
-    color: $base-color;
+    // color: $base-color;
     background: #fff;
     text-decoration: none;
   }
 }
-
 .shadow {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
-
 .shadow-large {
   box-shadow: 0 3px 6px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.15);
 }
-
 .heading {
   position: relative;
   display: inline-block;
@@ -242,15 +207,11 @@ footer {
     background: $base-color-aqua;
   }
 }
-
 .background-alt {
   background: $base-color-white;
 }
 
-
 /*   ----- 4. Lead Styles -----  */
-
-
 #lead {
   position: relative;
   height: 100vh;
@@ -261,7 +222,6 @@ footer {
   padding: 15px;
   overflow: hidden;
 }
-
 #lead-content {
   position: absolute;
   z-index: 10;
@@ -282,7 +242,6 @@ footer {
     letter-spacing: 0.05em;
     line-height: 1.2em;
 	}
-
   h2 {
     color: $base-color-white;
     font-weight: 500;
@@ -290,7 +249,6 @@ footer {
     margin-bottom: 20px;
     margin-top:25px;
 	}
-
   .myButton--know-me {
     background-color: $base-color-aqua;
     border: 0.1rem solid $base-color-aqua;
@@ -317,7 +275,6 @@ footer {
     }
   }
 }
-
 #lead-overlay {
   position: absolute;
   height: 100%;
@@ -329,7 +286,6 @@ footer {
   background: rgba($base-color-black, 0.68);
   z-index: 1;
 }
-
 #lead-down {
   position: absolute;
   left: 0;
@@ -348,47 +304,37 @@ footer {
     border-radius: 50%;
     text-align:center;
   }
-
   i {
   	animation: pulsate 1.5s ease;
 	  animation-iteration-count: infinite;
     padding-top: 5px;;
   }
 }
-
 .fa-chevron-down:before {
   content: "\f078";
   color: #faf436;
 }
-
 @keyframes pulsate {
-    0% {
-        transform: scale(1, 1);
-    }
-
-    50% {
-        transform: scale(1.2, 1.2);
-    }
-
-    100% {
-        transform: scale(1, 1);
-    }
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.2, 1.2);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
 }
 
-
 /* ----- 5. About Styles -----  */
-
-
 #about {
   padding: 95px 15px;
   border-bottom: 1px solid $base-color-light-grey;
   background-color: $base-color-light-grey;
-
   h2 {
   	color: $heading;
 		font-family: 'Lato', sans-serif;
   }
-
   p {
   	color: $text;
     font-size: 23px;
@@ -396,14 +342,12 @@ footer {
     text-align: justify;
     margin-bottom: 11px;
   }
-
   h3.about_title {
     margin-top: 0;
     font-size: 2.28em;
     margin-bottom: 16px;
 		font-family: 'Lato', sans-serif;
   }
-
   .myButton--cv{
     background-color: $base-color-aqua;
     border: 0.1rem solid $base-color-aqua;
@@ -432,21 +376,16 @@ footer {
   }
 }
 
-
 /*  ----- 6. Experience Styles ----- */
-
-
 #experience {
   padding: 50px 15px;
   text-align: center;
   border-bottom: 1px solid $border;
-
   h2 {
     color: $heading;
 		font-family: 'Lato', sans-serif;
   }
 }
-
 #experience-timeline {
   margin: 30px auto 0 auto;
   position: relative;
@@ -460,22 +399,20 @@ footer {
     right: auto;
 	  height: 100%;
     width: 3px;
-    background: $base-color;
+    // background: $base-color;
     z-index: 0;
   }
-
   &:after {
     position: absolute;
     content: '';
     width: 3px;
     height: 40px;
-    background: $base-color;
-    background: linear-gradient(to bottom, $base-color, rgba($base-color, 0));
+    // background: $base-color;
+    // background: linear-gradient(to bottom, $base-color, rgba($base-color, 0));
     top: 100%;
     left: 303px;
   }
 }
-
 .vtimeline-content {
   margin-left: 350px;
   background: #fff;
@@ -490,7 +427,6 @@ footer {
     display: inline-block;
     margin: 0;
   }
-
   h4 {
     font-size: 1.2em;
     font-weight: 300;
@@ -503,20 +439,18 @@ footer {
     margin: 0;
   }
 }
-
 .vtimeline-point {
   position: relative;
   display: block;
   vertical-align: top;
   margin-bottom: 30px;
 }
-
 .vtimeline-icon {
   position: relative;
   color: #fff;
   width: 50px;
   height: 50px;
-  background: $base-color;
+  // background: $base-color;
   border-radius: 50%;
   float: left;
   z-index: 99;
@@ -527,7 +461,6 @@ footer {
     margin-top: 10px;
   }
 }
-
 .vtimeline-date {
   width: 260px;
   text-align: right;
@@ -538,10 +471,7 @@ footer {
   color: #374054;
 }
 
-
 /* ----- 7. Education Styles ----- */
-
-
 #education {
   padding: 50px 15px 20px 15px;
   border-bottom: 1px solid $border;
@@ -552,7 +482,6 @@ footer {
 		font-family: 'Lato', sans-serif;
   }
 }
-
 .education-block {
   max-width: 700px;
   margin: 0 auto 30px auto;
@@ -566,34 +495,27 @@ footer {
     color: $heading;
 		font-family: 'Lato', sans-serif;
   }
-
   span {
     color: $text;
     float: right;
   }
-
   h4 {
 	  color: $text;
     clear: both;
     font-weight: 500;
     margin: 0 0 15px 0;
   }
-
   p, ul {
     margin: 0;
     color: $text;
     font-size: 0.9em;
   }
-
   ul {
     padding: 0 0 0 15px;
   }
 }
 
-
 /*  ----- 8. Project Styles ----- */
-
-
 .projects__item{
 	display: flex;
 	flex-wrap: nowrap;
@@ -618,7 +540,6 @@ footer {
 	line-height: 30px;
 	border-radius: 4px;
 	text-align: left;
-
 }
 .column__left{
 	padding-top: 10px;
@@ -639,7 +560,6 @@ footer {
 		justify-content: center;
 	}
 }
-
 .column__right{
 	padding-bottom: 10px;
 	width: 70%;
@@ -665,7 +585,6 @@ footer {
 .column__right a{
 	color: darken($base-color-aqua, 10% );
 }
-
 .column__right p{
 	font-size: 1.1em;
 	margin-left: 20px;
@@ -686,7 +605,6 @@ i.fa.fa-external-link {
 		height: auto;
 	}
 }
-
 #projects {
   border-bottom: 1px solid $base-color-white;
   text-align: center;
@@ -697,7 +615,6 @@ i.fa.fa-external-link {
 		font-family: 'Lato', sans-serif;
   }
 }
-
 .tags{
 	margin-left: 20px;
 }
@@ -713,16 +630,12 @@ i.fa.fa-external-link {
 		font-size: 0.73em;
 	}
 }
-
 .viewProject a:hover{
 	text-decoration: none;
 	color: darken($base-color-aqua, 30% );
 }
 
-
 /* ----- 9. Skills Styles -----  */
-
-
 #skills {
   padding: 50px 15px;
   text-align: center;
@@ -732,14 +645,12 @@ i.fa.fa-external-link {
     margin-bottom: 60px;
 		font-family: 'Lato', sans-serif;
   }
-
   ul {
     display: block;
     margin: 0 auto;
     padding: 0;
     max-width: 800px;
   }
-
   li {
     display: inline-block;
     margin: 7px;
@@ -754,7 +665,6 @@ i.fa.fa-external-link {
 	.li-1{
   	background:$base-color-aqua;
 	}
-
 	.li-2{
 		background: #008989;
 	}
@@ -763,13 +673,10 @@ i.fa.fa-external-link {
 	}
 }
 
-
 /*  ----- 10. Contact Styles ----- */
-
-
 #contact {
   padding: 50px 15px;
-  background: $base-color-mid-grey;
+  // background: $base-color-mid-grey;
   text-align: center;
   h2 {
     margin: 0 0 30px 0;
@@ -777,25 +684,21 @@ i.fa.fa-external-link {
     font-weight: 500;
 		font-family: 'Lato', sans-serif;
   }
-
 	h3{
 		color: #fff;
 		font-size: 1.4em;
 		font-family: 'Lato', sans-serif;
 	}
-
 	p{
 		color: #fff;
 		font-size: 1.2em;
 	}
-
 	i{
 		font-size: 32px;
     margin: 0 10px;
     color: $base-color-aqua;
 	}
 }
-
 #contact-form {
   max-width: 500px;
   margin: 0 auto;
@@ -817,7 +720,6 @@ i.fa.fa-external-link {
       background: #fff;
     }
   }
-
   textarea {
     height: 150px;
     resize: none;
@@ -838,10 +740,7 @@ i.fa.fa-external-link {
   }
 }
 
-
 /*  ----- 11. Optional Section Styles -----  */
-
-
 .optional-section {
   padding: 50px 15px;
   text-align: center;
@@ -851,7 +750,6 @@ i.fa.fa-external-link {
 		font-family: 'Lato', sans-serif;
   }
 }
-
 .optional-section-block {
   max-width: 700px;
   margin: 0 auto 30px auto;
@@ -865,25 +763,21 @@ i.fa.fa-external-link {
     color: $heading;
 		font-family: 'Lato', sans-serif;
   }
-
   h4 {
     color: $text;
     clear: both;
     font-weight: 500;
     margin: 0 0 15px 0;
   }
-
   p, ul {
     margin: 0 0 15px 0;
     color: $text;
     font-size: 0.9em;
   }
-
   ul {
     padding: 0 0 0 15px;
   }
 }
-
 .projects_container {
   display: flex;
   justify-content: space-around;
@@ -938,7 +832,6 @@ i.fa.fa-external-link {
     }
   }
 }
-
 @keyframes dropHeader {
   0% {
     transform: translateY(-100%);
@@ -948,11 +841,7 @@ i.fa.fa-external-link {
   }
 }
 
-
-
 /* ----- 12. Media Queries -----  */
-
-
 // Extra Small Devices
 @media only screen and (max-width : 480px) {
   #lead-content {
@@ -1011,7 +900,6 @@ i.fa.fa-external-link {
       padding: 10px 20px;
 	  }
   }
-
   #lead-down {
     display: none;
   }
@@ -1082,7 +970,6 @@ i.fa.fa-external-link {
       margin-top: 12px;
     }
   }
-
   #about {
     text-align: center;
     p {
