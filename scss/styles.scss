@@ -5,6 +5,7 @@ $base-color-black: #000000;
 $base-color-aqua: #0bb;
 $base-color-light: #d1d1d1;
 $base-color-light-grey: #f9f9f9;
+$base-color-mid-grey: #404448;
 $background: #fff;
 $background-alt: #191919;
 $border: #dcd9d9;
@@ -676,7 +677,7 @@ i.fa.fa-external-link {
 /*  ----- 10. Contact Styles ----- */
 #contact {
   padding: 50px 15px;
-  // background: $base-color-mid-grey;
+  background: $base-color-mid-grey;
   text-align: center;
   h2 {
     margin: 0 0 30px 0;
