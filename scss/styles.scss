@@ -321,6 +321,7 @@ header {
   font-size: 2em;
   font-weight: 400;
   margin: 0 0 30px 0;
+  font-family: 'Roboto Mono', monospace;
   &:after {
     position: absolute;
     content: '';
@@ -331,7 +332,7 @@ header {
     right: 0;
     margin: 0 auto;
     background: $base-color-aqua;
-    bottom: -10%;
+    bottom: -15%;
   }
 }
 .background-alt {
@@ -562,7 +563,7 @@ ul.list-check li {
 #expertise  h2 {
   color: #374054;
   margin-bottom: 60px;
-	font-family: 'Lato', sans-serif;
+font-family: 'Roboto Mono', monospace;
 }
 #expertise ul {
   display: block;
@@ -748,7 +749,7 @@ i.fa.fa-external-link {
   h2 {
 	  color: $base-color-black;
     margin-bottom: 50px;
-		font-family: 'Lato', sans-serif;
+		font-family: 'Roboto Mono', monospace;
   }
 }
 .tags{
@@ -779,7 +780,7 @@ i.fa.fa-external-link {
   h2 {
 	  color: $heading;
     margin-bottom: 60px;
-		font-family: 'Lato', sans-serif;
+font-family: 'Roboto Mono', monospace;
   }
   ul {
     display: block;
@@ -818,7 +819,7 @@ i.fa.fa-external-link {
     margin: 0 0 30px 0;
     color: $base-color-white;
     font-weight: 500;
-		font-family: 'Lato', sans-serif;
+		font-family: 'Roboto Mono', monospace;
   }
 	h3{
 		color: $base-color-white;
