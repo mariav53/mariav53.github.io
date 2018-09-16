@@ -1120,12 +1120,15 @@ font-family: 'Roboto Mono', monospace;
 @media(max-width:559px){
   .download-button{
   flex-direction: column;
+  align-items: center;
   }
   .download-button a {
   margin-bottom: 20px;
   width: 90%;
   font-size: 14px;
   text-align: center;
+  margin: 0 auto!important;
+  margin-bottom: 10px!important;
   }
 }
 @media (max-width:766px){.intro h1{font-size:40px;line-height:40px;}
